@@ -2,28 +2,29 @@
 // Why doesn't Javascript have sleep?
 
 function sleep(timeInMs) {
-  const endTime = Date.now() + timeInMs;
-  while (Date.now() < endTime) {
-    continue;
+  const start = Date.now();
+  const end = start + timeInMs;
+  while (Date.now() < end) {
+    continue
   }
 }
 
 
 console.log('Starting...');
 sleep(2000);
-console.log('2 seconds have passed...')
+console.log('2 seconds have passed...');
 sleep(2000);
-console.log('4 seconds have passed...')
+console.log('4 seconds have passed...');
 sleep(1000);
-console.log('5 seconds have passed...')
+console.log('5 seconds have passed...');
 sleep(500);
-console.log('5.5 seconds have passed...')
+console.log('5.5 seconds have passed...');
 sleep(500);
-console.log('6 seconds have passed...')
+console.log('6 seconds have passed...');
 sleep(500);
-console.log('6.5 seconds have passed...')
+console.log('6.5 seconds have passed...');
 sleep(1500);
-console.log('8 seconds have passed...')
+console.log('8 seconds have passed...');
 
 
 // What if I want to know when 4.5 seconds have passed?
